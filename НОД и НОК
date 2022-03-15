@@ -1,0 +1,27 @@
+#include <iostream>
+ 
+int NOD (int a, int b)
+{
+    while (a != b)
+    {
+        if (a > b)
+            a -= b;
+        else
+            b -= a;
+    }
+    return a;
+}
+ 
+int NOK (int a, int b)
+{
+    return a * b / NOD (a, b);
+}
+ 
+int main ()
+{
+    int a = 14;
+    int b = 28;
+ 
+    std::cout << NOD (a, b) << " " << NOK (a, b) << std::endl;
+    return 0;
+}
