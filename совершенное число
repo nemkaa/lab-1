@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+int k = 1, n, sum = 0;
+cin >> n;
+while (k < n)
+    {
+    if (n % k == 0) sum += k;
+    k ++;
+    }
+if (sum == n)
+{
+    k = 1;
+    while (k < n)
+    {
+    if(n % k == 0) cout << k << " ";
+    k++;
+    }
+}
+else cout << 0;
+return 0;
+}
