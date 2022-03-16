@@ -1,5 +1,5 @@
 #include <iostream>
- 
+using namespace std;
 int NOD (int a, int b)
 {
     while (a != b)
@@ -22,6 +22,6 @@ int main ()
     int a = 14;
     int b = 28;
  
-    std::cout << NOD (a, b) << " " << NOK (a, b) << std::endl;
+    cout << NOD (a, b) << " " << NOK (a, b) << endl;
     return 0;
 }
