@@ -19,8 +19,9 @@ int NOK (int a, int b)
  
 int main ()
 {
-    int a = 14;
-    int b = 28;
+    int a;
+    int b;
+    cin >> a >> b;
  
     cout << "Наибольший общий делитель =>" << NOD (a, b) << " " << "Наименьшее общее кратное =>"  << NOK (a, b) << endl;
     return 0;
