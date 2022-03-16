@@ -14,10 +14,11 @@ if (sum == n)
     k = 1;
     while (k < n)
     {
-    if(n % k == 0) cout << k << " ";
+    if(n % k == 0);
     k++;
     }
+    cout << "совершенное";
 }
-else cout << 0;
+else cout << "НЕ совершенное";
 return 0;
 }
